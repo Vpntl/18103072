@@ -1,18 +1,15 @@
-mport java.util.*;
-public class q2 {
-
-public static void main(String[] args) {
-		int n=Integer.MAX_VALUE;
-		long s=0;
-		
-		//System.out.println(n);
-		for(int i=n;i>=1;i--)
-		{
-			s=i*i;
-			long t=(i*(i+1))/2;
-			if(s==t)
-			{System.out.println(i);break;}
-		}
-		
-	}
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        int n=1;
+        long sum = 1;
+        while(n<Integer.MAX_VALUE){
+            if(sum==n*n){
+                System.out.println("Answer: "+n);
+            }
+            n+=1;
+            sum+=n;
+        }
+        System.out.println("Last checked value\n n=" +n+" sum="+sum );
+    }
 }
