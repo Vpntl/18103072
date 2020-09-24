@@ -19,7 +19,7 @@ public class WebCrawler {
     private static Stack<String> UrlPending = new Stack<>();
     //hashset to keep a check so that same url is not visited again and again
     private static HashSet<String> UrlVisited = new HashSet<>();
-    //depth of the crawler set to 10
+    //depth of the crawler
     private static int depth=50;
     
     public static void getUrls(String url,String newBase) {
